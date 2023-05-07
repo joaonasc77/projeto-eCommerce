@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>GuitasShop</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md sticky-top navbar-light" style="background-color:#FFD60A" justify-content-between>
+        <img src="guitar.png" alt="logo" id="logo" class="navbar-brand" width="60" height="60">
+        <span><strong>GuitasShop</strong> <br> O melhor site para encontrar sua guitarra!</span>
+        <button class="navbar-toggler btn btn-light my-2 my-sm-0" type="button" data-toggle="collapse" data-target="#navegacao" aria-controls="navegacao" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navegacao">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Entrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Cadastrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Minha Conta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Meus Pedidos</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 m-2">
+                <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="aside col-md-3 p-4">
+                <h6>Busca rápida - Escolha seu produto</h6>
+                <p>Encontre a guitarra certa com os melhores preços!!</p>
+                <select class="w-100" name="type" id="type" aria-placeholder="0">
+                    <option value="0">Modelo</option>
+                    <option value="1">Stratocaster</option>
+                    <option value="2">Les Paul</option>
+                    <option value="3">Flying V</option>
+                    <option value="4">SG</option>
+                    <option value="5">Telecaster</option>
+                    <option value="6">Explorer</option>
+                </select>
+                <select class="w-100" name="brand" id="brand" aria-placeholder="0">
+                    <option value="0">Marca</option>
+                    <option value="1">Fender</option>
+                    <option value="2">Gibson</option>
+                    <option value="3">Ibanez</option>
+                    <option value="4">Strinberg</option>
+                    <option value="5">Epiphone</option>
+                </select>
+                <select class="w-100" name="category" id="category" aria-placeholder="0">
+                    <option value="0">Tipo</option>
+                    <option value="1">Guitarra 6 cordas</option>
+                    <option value="2">Canhota</option>
+                    <option value="3">Semi-Acústica</option>
+                </select>
+                <div class="row">
+                    <label>R$ </label>
+                    <input class="campo" type="text" placeholder="De">
+                    <label>R$ </label>
+                    <input class="campo" type="text" placeholder="Até">
+                </div>
+                <button class="btn-dark w-100"><i class="bi bi-search"></i> Search</button>
+            </div>
+            <div id="carousel" class="carousel slide col-md-9" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block" src="logo 2.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block" src="strato 3.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block" src="dave grohl 2.jpg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+        <aside>
+            <div class="aside">
+                <h6 class="mb-3">Itens mais avaliados</h6>
+                <div id="aside-card">
+                    <img class="" src="Gibson-Les-Paul-Standard-60s-Electric-Guitar-3.jpg" alt="imagem do produto">
+                    <div class="container">
+                        <p>Guitarra Gibson Les Paul Preto e Amarelo</p>
+                        <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                        <p>R$9685.00</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="aside-card">
+                    <img class="" src="Dave-Grohl-Gibson-Trini-Loper-Standard.jpg" alt="imagem do produto">
+                    <div class="container">
+                        <p>Guitarra Gibson Trini Lopez Dave Grohl</p>
+                        <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                        <p>R$14500.00</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="aside-card">
+                    <img class="" src="les paul branca.jpg" alt="imagem do produto">
+                    <div class="container">
+                        <p>Guitarra Epiphone Les Paul Branca</p>
+                        <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                        <p>R$5800.00</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="aside-card">
+                    <img class="" src="gibson angus.jpg" alt="imagem do produto">
+                    <div class="container">
+                        <p>Guitarra Gibson SG Angus Young</p>
+                        <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                        <p>R$11000.00</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="aside-card">
+                    <img class="" src="fender squier.jpg" alt="imagem do produto">
+                    <div class="container">
+                        <p>Guitarra Squier by Fender Canhoto</p>
+                        <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                        <p>R$7800.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="aside">
+                <h6>Newsletter</h6>
+                <p>Siga-nos para receber a Newsletter</p>
+                <input type="text">
+                <button class="btn-dark">Junte-se agora!</button>
+            </div>
+        </aside>
+        <section id="card-container">
+            <div class="card">
+                <img class="card-img-top" src="strinberg strato.jpg" alt="imagem do produto">
+                <div class="card-body">
+                    <p class="card-title">Guitarra Strinberg Stratocaster</p>
+                    <p class="card-text"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                    <p class="card-text">R$2185.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="guitarra flying v.png" alt="imagem do produto">
+                <div class="card-body">
+                    <p class="card-title">Guitarra Gibson Flying V</p>
+                    <p class="card-text"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                    <p class="card-text">R$8500.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="guitarra sg.jpg" alt="imagem do produto">
+                <div class="card-body">
+                    <p class="card-title">Guitarra Epiphone SG</p>
+                    <p class="card-text"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                    <p class="card-text">R$2450.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="guitarra les paul 2.png" alt="imagem do produto">
+                <div class="card-body">
+                    <p class="card-title">Guitarra Gibson Les Paul</p>
+                    <p class="card-text"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                    <p class="card-text">R$12600.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="explorer guitarra.jpg" alt="imagem do produto">
+                <div class="card-body">
+                    <p class="card-title">Guitarra Epiphone Explorer</p>
+                    <p class="card-text"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                    <p class="card-text">R$3685.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="fender stratocaster 5.jpg" alt="imagem do produto">
+                <div class="card-body">
+                    <p class="card-title">Guitarra Fender Stratocaster</p>
+                    <p class="card-text"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                    <p class="card-text">R$7800.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="fender telecaster.jpg" alt="imagem do produto">
+                <div class="card-body">
+                    <p class="card-title">Guitarra Fender Telecaster</p>
+                    <p class="card-text"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                    <p class="card-text">R$6400.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="gibson les paul.jpg" alt="imagem do produto">
+                <div class="card-body">
+                    <p class="card-title">Guitarra Gibson Les Paul Classic</p>
+                    <p class="card-text"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                    <p class="card-text">R$11900.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="ibanez canhoto.jpg" alt="imagem do produto">
+                <div class="card-body">
+                    <p class="card-title">Guitarra Ibanez Canhoto</p>
+                    <p class="card-text"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                    <p class="card-text">R$5600.00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light">
+        
+        <section class="d-flex justify-content-center justify-content-lg-between p-4" style="background-color:#FFD60A">
+        </section>    
+       
+        <section class="" style="background-color:#FFD60A">
+        <div class="container p-3" style="background-color:#FFD60A">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mx-auto">
+                    <h6 class="fw-bold mb-4">Métodos de Pagamento</h6>
+                    <h3><i class="bi bi-paypal"></i></h3>
+                    <h3><i class="bi bi-credit-card"></i></h3>
+                    <h3><i class="bi bi-cash"></i></h3>
+                    <h3><i class="bi bi-currency-bitcoin"></i></h3>
+                </div>
+                <div class="col-md-6 col-lg-3 mx-auto mb-md-0 text-star-fillt">
+                    <h6 class="fw-bold mb-4">Links Rápidos</h6>
+                    <p><a href="">Ajuda</a></p>
+                    <p><a href="">Política de Envio</a></p>
+                    <p><a href="">Cancelamento e Devolução</a></p>
+                    <p><a href="">FAQ</a></p>
+                    <p><a href="">Política de Privacidade</a></p>
+                    <p><a href="">Dúvidas mais Frequentes</a></p>
+                </div>
+                <div class="col-md-6 col-lg-3 mx-auto">
+                    <div class="me-5 d-none d-lg-block">
+                        <span>Redes Sociais</span>
+                    </div>
+                    <div class="row">
+                        <a href="" class="m-3"><h3><i class="bi bi-facebook"></i></h3></a>
+                        <a href="" class="m-3"><h3><i class="bi bi-twitter"></i></h3></a>
+                        <a href="" class="m-3"><h3><i class="bi bi-instagram"></i></h3></a>
+                        <a href="" class="m-3"><h3><i class="bi bi-tiktok"></i></h3></a>
+                        <a href="" class="m-3"><h3><i class="bi bi-whatsapp"></i></h3></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mx-auto mb-md-0">
+                    <h6 class="fw-bold mb-4">Fale Conosco</h6>
+                    <p>Belo Horizonte - Minas Gerais, Brasil</p>
+                    <p>guitasshop@hotmail.com</p>
+                    <p><i class="bi bi-phone"></i>Telefone +55 (31)99999-9999</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.062);">
+            <p class="m-0">© 2023 GuitasShop. Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
